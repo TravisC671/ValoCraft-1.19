@@ -1,6 +1,8 @@
 package net.trullycool.valocraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.trullycool.valocraft.block.ModBlocks;
+import net.trullycool.valocraft.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,5 +12,7 @@ public class ValoCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
