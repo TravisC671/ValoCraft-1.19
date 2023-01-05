@@ -2,7 +2,10 @@
   "item.valocraft.classic_gun": "Classic",
   "item.valocraft.ghost_gun": "Ghost",
 
-  "block.valocraft.radianite_block": "Radianite",
-
+  "block.valocraft.radianite_block": "Radianite Block",
+  "block.valocraft.radianite_block_2X2": "Radianite Block 2x2",
+  "block.valocraft.diagonal_brick": "Diagonal Brick",
+  "block.valocraft.wall_pillar": "Wall Pillar",
+  "block.valocraft.wall_pillar_base": "Wall Pillar Base",
   "itemGroup.minecraft.valocraft": "Valocraft Items"
 }

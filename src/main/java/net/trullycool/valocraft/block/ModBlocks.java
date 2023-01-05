@@ -13,11 +13,22 @@ import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.trullycool.valocraft.ValoCraft;
 import net.trullycool.valocraft.block.custom.RadianiteBoxBlock;
+import net.trullycool.valocraft.block.custom.RadianiteBoxBlock2x2;
 import net.trullycool.valocraft.item.ModItemGroup;
 
 public class ModBlocks {
     public static final Block RADIANITE_BLOCK = registerBlock("radianite_block",
             new RadianiteBoxBlock(FabricBlockSettings.of(Material.BARRIER)), ModItemGroup.ValocraftGroup);
+
+    public static final Block RADIANITE_BLOCK_2X2 = registerBlock("radianite_block_2x2",
+            new RadianiteBoxBlock2x2(FabricBlockSettings.of(Material.BARRIER)), ModItemGroup.ValocraftGroup);
+
+    public static final Block DIAGONAL_BRICK = registerBlock("diagonal_brick", new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ValocraftGroup);
+    public static final Block SMALL_TILE = registerBlock("small_tile", new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ValocraftGroup);
+
+    public static final Block WALL_PILLAR = registerBlock("wall_pillar", new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ValocraftGroup);
+
+    public static final Block WALL_PILLAR_BASE = registerBlock("wall_pillar_base", new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ValocraftGroup);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
